@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contáctanos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+<!-- 	SEO -->
+
+		<meta name="description" content="En esta página podrás encontrar contenido para educar a los más pequeños en la Biblia">
+		<meta name="keywords"  content= "Niños, Escuela Dominical, clases, Jesús, actividades, juegos, lecciones, Biblia">
+		<meta name= "author" content= "Zaida Mora">
+	
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<h1>Escuela Dominical Pequeñas Pisadas</h1>
+			
+			<!-- Menú -->
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col col-lg-2">
+						<img src="images/pisadas.png" alt="Pisadas" style="width: 70px;height:70px;">
+					</div>
+					<div class="col-md-auto">
+						<ul class= "menu">
+							<li><a href="Quienes.html">Quiénes Somos</a> 
+
+								<ul>
+									<li>Historia</li>
+									<li>Biografías</li>
+									<li>Administración</li>
+								</ul>
+							</li>	
+							<li><a href="actividades.html">Actividades</a> 
+
+								<ul>
+									<li>Dibuja y Pinta</li>
+									<li>Canta</li>
+									<li>Recorta y pega</li>
+								</ul>
+							</li>
+
+							<li><a href="clases.html">Clases</a> 
+								<ul>
+									<li>Joyitas del Rey</li>
+									<li>Los Vencedores</li>
+									<li>Soldaditos del Rey</li>
+									<li>Angelitos del Rey</li>
+								</ul>
+							</li>
+
+							<li><a href="Contacto.html">Contacto</a> 
+								<ul>
+									<li>Telefono</li>
+									<li>Correo</li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+					<div class="col col-lg-3">
+						<button type="button" class="btn btn-info">Ingresar</button>
+
+						<button type="button" class="btn btn-info">Registrarse</button>
+
+					</div>
+				</div>
+			</div>
+
+
+		</header>
+	</div>
+
+	<main>
+		<form class="main__formulario"> <!-- METODOLOGÍA BEM -->
+			<fieldset>
+				<legend>Completar los siguientes datos</legend>
+
+				<br>
+				<div class="form-group">
+					<label for="Nombre y Apellido"> Nombre y Apellido</label>
+					<input type="text" name="Nombre y Apellido" class="form-control">
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="complete"> Contraseña </label>
+					<input type="password" name="complete" class="form-control">	
+				</div>
+				<br>
+
+				<div class="form-group">
+					<label for="Correo electrónico"> Correo Electronico </label>
+					<input type="email" name="Correo electrónico" class="form-control">
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="Comentarios"> Dejanos tus comentarios</label>
+					<textarea name="Comentarios" class="form-control"></textarea>
+				</div>
+				<input type="submit" name="Enviar" value="Enviar">
+				<input type="reset" name="Reset" value="Borrar todo">
+			</fieldset>
+
+			<h5 class="main__clases">Selecciona tu Clase</h5> <!-- METODOLOGIA BEM -->
+
+			<div><input type="checkbox" name="Clase" value="Joyitas del Rey"> Joyitas del Rey</div>
+
+			<div><input type="checkbox" name="Clase" value="Soldaditos de Jesús"> Soldaditos de Jesús</div>
+
+			<div><input type="checkbox" name="Clase" value="Angelitos del Rey"> Angelitos del Rey</div>
+
+			<div><input type="checkbox" name="Clase" value="Los Vencedores"> Los Vencedores</div>
+
+			<br>
+		</form>
+
+		<!-- lista desplegable -->
+		<div class="main__edad"> <!-- METODOLOGÍA BEM -->
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Rango de Edad
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					<button class="dropdown-item" type="button">4 a 5 años</button>
+					<button class="dropdown-item" type="button">6 a 8 años</button>
+					<button class="dropdown-item" type="button">9 a 12 años</button>
+					<button class="dropdown-item" type="button">12 a 15 años</button>
+				</div>
+			</div>
+		</div>
+
+				<!-- <h5>Rango de Edad</h5>
+				<select name ="Rango de edad">
+					<option value="4 a 6 años"> 4 a 6 años</option>
+					<option value="6 a 8 años"> 6 a 8 años </option>
+					<option value="8 a 12 años"> 8 a 12 años </option>
+					<option value="12 hasta 15 años"> 12 hasta 15 años </option>
+				</select>
+				<br> -->
+
+				<!-- boton -->
+
+				<div class="main__botton--uppercase"> <!-- METODOLOGÍA BEM -->
+					<button type="button" class="btn btn-success">Guardar</button>				
+				</div>
+
+
+			</main>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		</body>
+
+		<footer>
+			<a href="index.html"> Volver al inicio</a>
+		</footer>
+		</html>
