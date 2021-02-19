@@ -1,0 +1,12 @@
+%fuentePrincipal{
+	font-family:Tw Cen MT;
+	font-size: 16px;
+	color:$color-principal-titulo;
+}
+
+@mixin cambiarBorder($ancho, $estilo, $color){
+	border-width:$ancho;
+	border-style: $estilo;
+	border-color: $color;
+}
+
